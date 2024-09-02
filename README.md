@@ -8,13 +8,18 @@ Before you begin, ensure you have Node.js installed on your system.
 
 ## Backend Configuration
 
-1. **Environment Files**: In this `backend` folder, create a file: `.env`. Add the following contents to the file:
+1. **Environment Files**: Create a file in this `backend` folder: `.env`. Add the following contents to the file:
 
    ```plaintext
-   MONGODB_CONNECTION_STRING=
-
-   JWT_SECRET_KEY=
-   FRONTEND_URL=
+      NODE_ENV = 
+      PORT = 
+      MONGO_URI = 
+      JWT_SECRET = 
+      GOOGLE_MAPS_API_KEY=
+      RESTAURANT_ADDRESS=
+      DELIVERY_RATE=
+      EMAIL_USER = 
+      EMAIL_PASS = 
    ```
 
 2. **MongoDB Setup**:
