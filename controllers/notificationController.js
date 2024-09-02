@@ -5,13 +5,11 @@ import User from '../models/userModel.js';
 
 // Configure nodemailer transporter
 let transporter = nodemailer.createTransport({
-  host: 'smtp.gmail.com',
-  port: 465,
-  secure: true, // Use TLS
+  service: 'gmail',
   auth: {
     type: 'login', // default
-    user: 'insroyalrestaurant@gmail.com',
-    pass: 'pbmo lsvu hpga njpd',
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASS,
   },
   // debug: true, // Enable debug logs
   // logger: true, // Log to console
